@@ -1,0 +1,73 @@
+/* root */
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+
+  --purple: #382ae1;
+  --purpleHover: hsla(245, 75%, 52%, 0.7);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+
+  background-color: var(--paleBlue);
+  background-image: url(../img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* main */
+.card {
+  width: 40%;
+}
+
+.card-body {
+  .container {
+    background: var(--veryPaleBlue);
+
+    width: 92%;
+
+    a {
+      margin-left: auto;
+
+      color: var(--purple);
+      text-decoration: underline;
+
+      transition: 0.3s ease;
+
+      &:hover {
+        color: var(--purpleHover);
+
+        text-decoration: none;
+      }
+    }
+
+    span {
+      color: var(--desaturatedBlue);
+    }
+  }
+}
+
+a {
+  color: var(--desaturatedBlue);
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.btn-white {
+  background: var(--purple);
+  text-transform: none;
+
+  &:hover {
+    background: var(--purpleHover);
+  }
+}
